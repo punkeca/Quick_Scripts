@@ -199,7 +199,7 @@ void mover(){
                         jogadas++;
                     }else{
                         printf("\n Posicao ja ocupada! \n");
-                        }//check morcego ou espaço
+                        }//check morcego ou espaÃ§o
                 }else{
                     printf("\n Corujas nao voam mais que 1 casa nesse jogo. \n");
                 }//check vizinho
@@ -222,7 +222,7 @@ void mover(){
                         printf("\n Coruja derrotou o morcego e tomou seu lugar! \n");
                         farinha++;
                         jogadas++;
-                    }//check morcego ou espaço
+                    }//check morcego ou espaÃ§o
                 }else{
                     printf("\n Corujas nao voam mais que 1 casa nesse jogo. \n");
                 }//check vizinho
