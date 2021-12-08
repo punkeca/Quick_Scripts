@@ -1,3 +1,9 @@
+/*
+DESENVOLVEDOR: Patricia Brenny Ribeiro
+DISCIPLINA: ECOP01 - Algoritmos
+CURSO: Engenharia de Computação - IESTI
+UNIVERSIDADE FEDERAL DE ITAJUBÁ - Itajubá, MG.
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
