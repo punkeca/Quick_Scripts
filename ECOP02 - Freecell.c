@@ -1,8 +1,8 @@
 /*
 DESENVOLVEDOR: Patricia Brenny Ribeiro
 DISCIPLINA: ECOP02 - Estrutura de Dados
-CURSO: Engenharia de ComputaÁ„o - IESTI
-UNIVERSIDADE FEDERAL DE ITAJUB¡ - Itajub·, MG.
+CURSO: Engenharia de Computa√ß√£o - IESTI
+UNIVERSIDADE FEDERAL DE ITAJUB√Å - Itajub√°, MG.
 */
 
 #include <stdio.h>
@@ -169,7 +169,7 @@ void moveMesaTemp(){
      //end if mesa vazia
      atual = primMesa[pos];
      while((atual->prox->prox!=NULL)&&(atual->prox!=NULL)){
-        atual = atual->prox; //anda atÈ o ult.
+        atual = atual->prox; //anda at√© o ult.
      }//end while
      ult = atual->prox;
      ult->prox = NULL;
@@ -189,7 +189,7 @@ void moveMesaTemp(){
 void moveTempMesa(){
     stCarta *ult,*atual;
     int postemp=99,posmesa=99;
- //checa se È permitido
+ //checa se √© permitido
     while((postemp<0)||(postemp>=4)){
         if(postemp!=99){
             printf("Tente novamente. \n");
@@ -257,13 +257,13 @@ void moveMesaNaipe(){
         printf("Mesa vazia.\n");
         sleep(2);
         return;
-     }else if(primMesa[pos]->prox==NULL){ //checa se mesa tem 1 item sÛ
+     }else if(primMesa[pos]->prox==NULL){ //checa se mesa tem 1 item s√≥
         ult = primMesa[pos];
         for(i=0;i<4;i++){
             if(primNaipe[i]!=NULL){
                 aux = primNaipe[i]; // aux inicia pilha de naipe
                 while(aux->prox!=NULL){
-                    aux = aux->prox; //anda atÈ o ult naipe.
+                    aux = aux->prox; //anda at√© o ult naipe.
                     }//end while
                 }//end if
             if((primNaipe[i]==NULL)&&(ult->num == 1)){
@@ -285,7 +285,7 @@ void moveMesaNaipe(){
 
      atual = primMesa[pos];
      while(atual->prox->prox!=NULL){
-        atual = atual->prox; //atual anda atÈ o ult.
+        atual = atual->prox; //atual anda at√© o ult.
      }//end while
      ult = atual->prox; // atribui o ultimo
      for(i=0;i<4;i++){
@@ -293,7 +293,7 @@ void moveMesaNaipe(){
         if(primNaipe[i]!=NULL){
             aux = primNaipe[i]; // aux inicia pilha de naipe
             while(aux->prox!=NULL){
-                aux = aux->prox; //anda atÈ o ult naipe.
+                aux = aux->prox; //anda at√© o ult naipe.
                 }//end while
             }//end if
 
@@ -316,7 +316,7 @@ void moveMesaNaipe(){
 void moveTempNaipe(){
     stCarta *ult,*aux;
     int postemp=99, i;
- //checa se È permitido
+ //checa se √© permitido
     while((postemp<0)||(postemp>=4)){
         if(postemp!=99){
             printf("Tente novamente. \n");
@@ -329,7 +329,7 @@ void moveTempNaipe(){
     if(temp[postemp]==NULL){
             printf("Temp vazio!\n");
             sleep(2);
-            return; //sai da funÁ„o
+            return; //sai da fun√ß√£o
      }//end if mesa vazia
 
     for(i=0;i<4;i++){
@@ -337,7 +337,7 @@ void moveTempNaipe(){
         if(primNaipe[i]!=NULL){
             aux = primNaipe[i]; // aux inicia pilha de naipe
             while(aux->prox!=NULL){
-                aux = aux->prox; //anda atÈ o ultimo do naipe.
+                aux = aux->prox; //anda at√© o ultimo do naipe.
                 }//end while
             }//end if
 
@@ -360,7 +360,7 @@ void moveTempNaipe(){
 void moveNaipeMesa(){
     stCarta *ult,*atual,*penultimo;
     int posnaipe=99,posmesa=99;
- //checa se È permitido
+ //checa se √© permitido
     while((posnaipe<0)||(posnaipe>=4)){
         if(posnaipe!=99){
             printf("Tente novamente. \n");
@@ -434,7 +434,7 @@ void moveNaipeMesa(){
 void moveNaipeTemp(){
     stCarta *atual,*ult;
     int posnaipe=99,i;
- //checa se È permitido
+ //checa se √© permitido
     while((posnaipe<0)||(posnaipe>=4)){
         if(posnaipe!=99){
             printf("Tente novamente. \n");
@@ -468,7 +468,7 @@ void moveNaipeTemp(){
 
      atual = primNaipe[posnaipe];
      while((atual->prox->prox!=NULL)&&(atual->prox!=NULL)){
-        atual = atual->prox; //anda atÈ o penultimo.
+        atual = atual->prox; //anda at√© o penultimo.
      }//end while
      ult = atual->prox;
      ult->prox = NULL;
@@ -670,7 +670,7 @@ int gameOver(){
         }//encontra o ultimo da pilha de naipe
     }//end for
 
-    if((ult[0]->num == 13)&&(ult[1]->num == 13)&&(ult[2]->num == 13)&&(ult[3]->num == 13)){ //condiÁ„o de vencedor
+    if((ult[0]->num == 13)&&(ult[1]->num == 13)&&(ult[2]->num == 13)&&(ult[3]->num == 13)){ //condi√ß√£o de vencedor
         venceu = 1;
     }else{
         venceu = 0;
