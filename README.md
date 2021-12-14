@@ -15,4 +15,4 @@ ECOP02 - DATA STRUCTURES
 
 ECOP04 - EMBEDDED SYSTEMS
 
-- Exploding Safe: A simulation of a safe - if you get your password wrong 3 times you'll face eminent explosion!
+- Exploding Safe: The PQDB will work to simulate a safe - if you get your password wrong 3 times you'll face eminent explosion! 
