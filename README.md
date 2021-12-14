@@ -5,6 +5,9 @@ ECOP01 - ALGORITHMS
 
 - Memory Game: A small, 2-player, memory game with letters of the alphabet. 
 
+- Owl Simulator: Controls an owl population in the dephts of a cavern. All with bat enemies and berries as food. 
+You may collect resources to build nests, breed babies in those nests and feed them berries to turn them into adult owls.
+
 ECOP02 - DATA STRUCTURES
 
 - Freecell: A more robust, ms-dos like, single player card-game. 
