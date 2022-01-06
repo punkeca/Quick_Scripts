@@ -109,9 +109,16 @@ void placeBoats(){
 }//end if
 
 void jogada(){
-    int lin,col;
-    printf("\nType the coordinates of the attack (lin col): ");
-    scanf("%d %d",&lin,&col);
+    int lin = 99,col = 99;
+    while((lin > 15 || lin < 0)||(col > 30) || (col < 0)||(mask[lin][col]!= '?')){ //doesnt allow fowl play
+        printf("\nType the coordinates of the attack (lin col): ");
+        scanf("%d %d",&lin,&col);
+        if((lin > 15 || lin < 0)||(col > 30) || (col < 0)||(mask[lin][col]!= '?')){
+            RED
+            printf("\n Invalid move. \n");
+            WHITE
+        }//end if
+    }//end while
     mask[lin][col] = board[lin][col];
     RED
     printf("\n ---------------- Press button to send bomb -------------------");
