@@ -10,7 +10,7 @@ You may collect resources to build nests, breed babies in those nests and feed t
 
 ECOP02 - DATA STRUCTURES (2021)
 
-- Freecell: A more robust, ms-dos like, single player card-game. Your goal is to organize in ascending numbers and pile up the cards by their suits on the suits piles. Some rules of the game will stand as challanges against your goal.
+- Freecell: A more robust, ms-dos like, single player card-game. Your goal is to organize the cards in ascending numbers and pile them up by their suits on the suits piles. Some rules of the game will stand as challanges against your goal.
 
 
 ECOP04 - EMBEDDED SYSTEMS (2021)
