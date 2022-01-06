@@ -115,7 +115,7 @@ void jogada(){
         scanf("%d %d",&lin,&col);
         if((lin > 15 || lin < 0)||(col > 30) || (col < 0)||(mask[lin][col]!= '?')){
             RED
-            printf("\n Invalid move. \n");
+            printf("\nInvalid move. \n");
             WHITE
         }//end if
     }//end while
