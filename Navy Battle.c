@@ -2,6 +2,7 @@
 AUTHOR: Patricia Brenny Ribeiro
 Computer Engineering undergraduate - UNIFEI
 NAVY BATTLE GAME - SINGLE PLAYER
+January 6th, 2022
 */
 #include <stdio.h>
 #include <stdlib.h>
