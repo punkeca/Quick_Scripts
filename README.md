@@ -1,6 +1,10 @@
 # Student-Projects
 Projects developed during my Computer Engineering Major at UNIFEI.
 
+INDEPENDENT (2021 - 2025)
+
+- Navy Battle: Single player, sink all your enemy ships to win the game. Beware! Bombs are limited.
+
 ECOP01 - ALGORITHMS (2021)
 
 - Memory Game: A small, 2-player, memory game with letters of the alphabet. 
