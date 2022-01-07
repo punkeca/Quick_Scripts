@@ -21,7 +21,7 @@ typedef enum{true, false}bool;
     char mask[LIN][COL];
     char board[LIN][COL];
     int lin,col;
-    int pts=0,bombs=120;
+    int pts=0,bombs=150;
     bool gameover = false;
 
 void fillBoard(){
@@ -115,14 +115,15 @@ void jogada(){
         scanf("%d %d",&lin,&col);
         if((lin > 15 || lin < 0)||(col > 30) || (col < 0)||(mask[lin][col]!= '?')){
             RED
-            printf("\nInvalid move. \n");
+            printf("\n Invalid move. \n");
             WHITE
         }//end if
     }//end while
-    mask[lin][col] = board[lin][col];
     RED
-    printf("\n ---------------- Press button to send bomb -------------------");
+    printf("\n ---------------- Press ENTER to send bomb -------------------");
+    WHITE
     getch();
+    mask[lin][col] = board[lin][col];
     bombs--;
     switch(board[lin][col]){
     case '~':
@@ -159,9 +160,19 @@ void SetColor(int ForgC){
      return;
  }
 
+void help(){
+    printf("\n   _f_\n x(___) is a submarine. \n");
+    printf("\n  ___R___\n x\\_____/ is a boat. \n \n");
+    printf("\n Your goal is to destroy the enemy fleet completely.\n ");
+    printf("\n If you run out of bombs before completing your mission, you loose.\n ");
+    printf("\n Choose the coordinates and write them as line and columm number.\n ");
+    printf("\n ---------------- Press any button to START -------------------");
+    getch();
+}//end help
 int main (int argc, char **argv){
     fillBoard();
     placeBoats();
+    help();
     while(gameover == false){
         system("cls");
         printBoard();
@@ -174,9 +185,32 @@ int main (int argc, char **argv){
         }else if(pts == 90){ //if you conquered all points
             gameover = true;
             GREEN
-            printf("\nYou win! All enemy ships were destroyed succesfully. \n");
+            printf("\nYou win! All enemy ships were destroyed successfully. \n");
         }//end else
     }//end while
-
+     int i,j;
+    WHITE
+    printf("------------------------------------------------------------\n");
+    for(i=0;i<LIN;i++){
+        for(j=0;j<COL;j++){
+            switch(board[i][j]){//chose color
+            case '?':
+                YELLOW
+                break;
+            case '~':
+                BLUE
+                break;
+            default:
+                GREY
+                break;
+            }//end switch
+            printf("%c ",board[i][j]);
+        }//end for
+        WHITE
+        printf("|\n");
+    }//end for
+    printf(" ------------------------------------------------------------\n");
+    printf("\n ---------------- Press any button to quit game -------------------");
+    getch();
     return 0;
 }//end main
