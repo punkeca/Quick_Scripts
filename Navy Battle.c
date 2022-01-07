@@ -21,7 +21,7 @@ typedef enum{true, false}bool;
     char mask[LIN][COL];
     char board[LIN][COL];
     int lin,col;
-    int pts=0,bombs=150;
+    int pts=0,bombs=130;
     bool gameover = false;
 
 void fillBoard(){
@@ -178,11 +178,11 @@ int main (int argc, char **argv){
         printBoard();
         printf("Player #1: %d points and %d bombs left \n", pts,bombs);
         jogada();
-        if((bombs == 0)&&(pts < 90)){ //if you ran out of bombs
+        if((bombs == 0)&&(pts < 72)){ //if you ran out of bombs
             gameover = true;
             RED
             printf("\nYou lost! Bombs are over and enemies were not defeated. \n");
-        }else if(pts == 90){ //if you conquered all points
+        }else if(pts == 72){ //if you conquered all points
             gameover = true;
             GREEN
             printf("\nYou win! All enemy ships were destroyed successfully. \n");
@@ -214,3 +214,4 @@ int main (int argc, char **argv){
     getch();
     return 0;
 }//end main
+
