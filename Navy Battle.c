@@ -164,7 +164,7 @@ void help(){
     printf("\n   _f_\n x(___) is a submarine. \n");
     printf("\n  ___R___\n x\\_____/ is a boat. \n \n");
     printf("\n Your goal is to destroy the enemy fleet completely.\n ");
-    printf("\n If you run out of bombs before completing your mission, you loose.\n ");
+    printf("\n If you run out of bombs before completing your mission, you lose.\n ");
     printf("\n Choose the coordinates and write them as line and columm number.\n ");
     printf("\n ---------------- Press any button to START -------------------");
     getch();
