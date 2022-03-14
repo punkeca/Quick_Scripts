@@ -8,7 +8,7 @@ UNIVERSIDADE FEDERAL DE ITAJUBÁ - Itajubá, MG.
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <windows.h>
+#include <windows.h> // Useful for sleep functions.
 typedef struct no{
     unsigned int num;
     char naipe;
@@ -19,7 +19,7 @@ stCarta *primMesa[8];
 stCarta *primNaipe[4];
 stCarta *temp[4];
 stCarta *primMonte = NULL;
-void SetColor(int ForgC){
+void SetColor(int ForgC){ //this functions came straight from Google.
 
      WORD wColor;
 
@@ -38,15 +38,15 @@ void SetColor(int ForgC){
 void geraBaralho(){
     stCarta *novo;
     unsigned char i;
-    int j,num,mat[4][13];
+    int j,num,mat[4][13]; //this matrix will be used to shuffle the cards in the deck.
     novo = NULL;
-    for(i=0;i<4;i++){
+    for(i=0;i<4;i++){ //initializes matrix
         for(j=0;j<13;j++){
             mat[i][j] = 0;
         }//end for j
     }//end for i
     num=0;
-    while(num<52){
+    while(num<52){ //this loop shuffles the cards by randomly accessing the matrix's coordinates without repeating any.
         i = rand()%4;
         j = rand()%13;
         if(mat[i][j]==0){
@@ -54,9 +54,9 @@ void geraBaralho(){
             if(primMonte != NULL){
                 novo->prox = primMonte;
             }//end if
-            novo->num = j+1;
+            novo->num = j+1; //converting to suits in ASCII.
             novo->naipe = i+3;
-            primMonte = novo;
+            primMonte = novo; //updates the first card in the deck.
             novo = NULL;
             num++;
             mat[i][j] = 1;
