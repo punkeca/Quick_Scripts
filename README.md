@@ -23,4 +23,4 @@ ECOP04 - EMBEDDED SYSTEMS (2021)
 
 ECOM11A - DISCREET MATH LAB (2022)
 
-- Record Database: A record database implemented in Haskell, using all the power of a functional programming language. Include and erase discs, research with varying methods or display your database organized by age.
+- Record Database: A records database implemented in Haskell, using all the power of a functional programming language. Include and erase discs, research with varying methods or display your database organized by age.
