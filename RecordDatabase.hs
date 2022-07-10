@@ -1,3 +1,9 @@
+{-
+Patricia B Ribeiro
+For ECOM11A - Discreet Math Laboratory
+Universidade Federal de Itajubá - IESTI
+Itajubá - MG, 2022
+-}
 import System.Process
 
 main = do
