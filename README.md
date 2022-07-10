@@ -20,3 +20,7 @@ ECOP02 - DATA STRUCTURES (2021)
 ECOP04 - EMBEDDED SYSTEMS (2021)
 
 - Exploding Safe: The PQDB will work to simulate a safe - if you get your password wrong 3 times you'll face eminent explosion! 
+
+ECOM11A - DISCREET MATH LAB (2022)
+
+- Record Database: A record database implemented in Haskell, all with IO functions. Include new discs, erase, research and display them by age.
