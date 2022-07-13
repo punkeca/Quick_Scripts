@@ -4,6 +4,7 @@ Projects developed during my Computer Engineering Major at UNIFEI.
 INDEPENDENT (2021 - 2025)
 
 - Navy Battle: Single player, sink all your enemy ships to win the game. Beware! Bombs are limited.
+- Morse Encoder-Decoder: Type an english message, get a morse equivalent. (Will be expanded to allow for choices of encoding or decoding your input).
 
 ECOP01 - ALGORITHMS (2021)
 
@@ -24,3 +25,5 @@ ECOP04 - EMBEDDED SYSTEMS (2021)
 ECOM11A - DISCREET MATH LAB (2022)
 
 - Record Database: A records database implemented in Haskell, using all the power of a functional programming language. Include and erase discs, research with varying methods or display your database organized by age.
+
+ECOP13A - OBJECT ORIENTED PROGRAMMING (2022)
