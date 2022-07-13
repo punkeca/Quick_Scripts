@@ -1,3 +1,8 @@
+/*
+DEVELOPER: Patricia Brenny Ribeiro
+Engenharia de Computação - IESTI
+UNIVERSIDADE FEDERAL DE ITAJUBÁ - Itajubá, MG.
+*/
 #include <iostream>
 #include <string>
 #include <vector>
@@ -14,7 +19,8 @@ int main() {
         "-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-",
         "..-","...-",".--","-..-","-.--","--..","-----",".----",
         "..---","...--","....-",".....","-....","--...","---..","----."
-    };
+    };//Ideal structure would be a map, however array was chosen as initial solutior to encode due to back-and-fourth decryption.
+	
     string original{};
     string encrypted{};
     string decrypted{};
@@ -24,7 +30,7 @@ int main() {
     
     cout << "Morse code message: ";
     for(auto &x : original){ //refence to change the actual variables in the vector.
-        x = tolower(x);
+        x = tolower(x); //Guarantees there wont be any capitals to be treated and simpifies solution.
         if(x == ' ')
             encrypted += " ";
         else if (alphabet.find(x)!= string::npos){
@@ -43,7 +49,7 @@ int main() {
             word += "-";
         }//end if
         else if(encrypted[i] == ' ' && encrypted[i+1]== ' ' && encrypted[i+2]== ' '){ // its a new word
-            decrypted += alphabet[find(word, morseCode)];
+            decrypted += alphabet[find(word, morseCode)]; //find function was implemented.
             decrypted += " " ;
             word.clear();
             continue;
@@ -59,7 +65,7 @@ int main() {
 }//end main
 
 int find(string element,  array<string,36> arr) {
-	for(int i=0;i<36;i++){
+	for(int i=0;i<arr.size();i++){
 	    //cout << element <<endl;
 		if(arr[i] == element)
 			return i;
