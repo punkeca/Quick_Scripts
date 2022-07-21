@@ -1,0 +1,42 @@
+Project prototype:
+
+1Create a Being class.
+2Create a player class that inherits from being.
+3Create a monster class that also ingerits from being.
+5Create an item class.
+
+=============================================================
+Create the methods:
+general method: quantity of class objects in world.
+Being has name, level, health and background. 
+Player has name, level, health, damage, background, race and class, inventory[items].
+Monster has name, level, health, damage, background and type.
+Item has name, price, quantity, and description.
+
+implement methods evolve, change background, attack and buy item/use item, buy item.
+
+items are money, courange potion and health potion.
+=============================================================
+overload the operators + to evolve monster or player.
+overload the operator - to kill monster or player. (throw exception if health is not 0)
+create a copy constructor and assignment operator to create a monter, player or item.
+overload the comparison opperator >= <= > <(for level).
+overload << and >> to display characters and allow caracter creation.
+
+=============================================================
+create a main file to explore a simple adventure where you find monsters and kill them.
+
+=============================================================
+To practice polymorphism and smart pointers, implement a vector of shared smart pointers.
+This will allow you to print all enemies in the game along with the player activity status.
+Handle those pointers well, and be careful when throwing exceptions.
+
+=============================================================
+To practice exceptions, don't allow for 0 level beings to be created.
+Dont allow for more items than the inventory can keep.
+Dont allow for quantity of items of the same type to be more than 5.
+Dont allow for more than one player to be created in the world.
+Dont allow for more than 5 monsters to be created in the world.
+Dont allow for <1 health status and level.
+dont allow for names with only whitespaces.
+Remember to implement what methods in these exceptions.
