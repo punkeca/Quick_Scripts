@@ -29,5 +29,3 @@ ECOM11A - DISCREET MATH LAB (2022)
 ECOM03A - GRAPH THEORY (2022)
 - ComarcasMG: Python script that calculates distance between some districts of Minas Gerais and finds the MST, thus finding the shortest path to reach all destinations. This can be used to spare resources when building a network of some kind.
 
-ECOT02A - SOFTWARE PROJECT (2022)
--
