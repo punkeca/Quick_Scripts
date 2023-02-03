@@ -1,4 +1,4 @@
-# Student-Projects
+# Quick Scripts
 Small projects developed during my Computer Engineering Major at UNIFEI.
 
 INDEPENDENT (2021 - 2025)
