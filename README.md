@@ -1,5 +1,5 @@
 # Student-Projects
-Projects developed during my Computer Engineering Major at UNIFEI.
+Small Projects developed during my Computer Engineering Major at UNIFEI.
 
 INDEPENDENT (2021 - 2025)
 
