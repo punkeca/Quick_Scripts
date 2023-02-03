@@ -26,6 +26,9 @@ ECOM11A - DISCREET MATH LAB (2022)
 
 - Record Database: A records database implemented in Haskell, using all the power of a functional programming language. Include and erase discs, research with varying methods or display your database organized by age.
 
-ECOM03A - GRAPH THEORY (2022)
+ECOM02A - GRAPH THEORY (2022)
 - ComarcasMG: Python script that calculates distance between some districts of Minas Gerais and finds the MST, thus finding the shortest path to reach all destinations. This can be used to spare resources when building a network of some kind.
+
+ECOM03A - Analysis of Algorithms (2022)
+- SortAlgs: CPP Sorting algorithms developed in order to examine and compare time complexity and general problem solving structures.
 
